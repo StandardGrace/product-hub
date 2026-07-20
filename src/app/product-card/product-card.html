@@ -1,0 +1,9 @@
+<div style="border: 1px solid #eee; padding: 15px; border-radius: 5px; margin-bottom: 10px;" 
+     [style.opacity]="productData.inStock ? '1' : '0.5'">
+  <h3>{{ productData.name }}</h3>
+  <p>Price: ${{ productData.price }}</p>
+  
+  @if (!productData.inStock) {
+    <span style="color: red; font-weight: bold;">Out of Stock</span>
+  }
+</div>

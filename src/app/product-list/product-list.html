@@ -1,0 +1,7 @@
+<div style="padding: 20px; border: 1px solid #ddd; margin-top: 15px;">
+  <h2>Available Items</h2>
+  
+  @for (product of products; track product.id) {
+    <app-product-card [productData]="product"></app-product-card>
+  }
+</div>
