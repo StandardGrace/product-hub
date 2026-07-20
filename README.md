@@ -25,8 +25,7 @@ Then open http://localhost:4200.
 ## If I were extending it
 
 - Move the hardcoded API URL into environment configuration
-- [one or two more - pagination, error handling on the HTTP calls,
-  tests, whatever you actually noticed while reviewing it]
+- error handling for API calls
 
 ## Screenshot
 
