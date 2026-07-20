@@ -5,15 +5,16 @@ Development Diploma (2026).
 
 ## What it demonstrates
 
-- Component architecture with parent-child data flow via `@Input()`
+- Component architecture (header, product list/card, data list/form)
+  with parent-child data flow via `@Input()`
 - Template iteration using Angular's `@for` block syntax
-- `HttpClient` integration against a REST API ([which API, e.g.
-  "a mock products endpoint" or the real one])
-- [anything else it genuinely covers - routing, forms, services]
+- `HttpClient` integration against the fake store API
+- Client-side routing via the Angular Router
+- Form handling in a dedicated form component
 
 ## Stack
 
-Angular [version - check package.json] · TypeScript · [CSS / whatever]
+Angular 21.2.15 · TypeScript · HTML · CSS
 
 ## Running it
 
@@ -24,8 +25,14 @@ Then open http://localhost:4200.
 
 ## If I were extending it
 
+- Flesh out the generated `.spec.ts` stubs into real unit tests -
+  as a QA professional moving into development, untested code
+  bothers me more than most
 - Move the hardcoded API URL into environment configuration
-- error handling for API calls
+- Add error and loading states around the HTTP calls
+- Either use the SSR scaffold the CLI generated or strip it -
+  currently it's along for the ride
+- Connect HttpClient API to a real working database
 
 ## Screenshot
 
